@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherD</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/mainw.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="#">
+             <div><img src="image/logo.png" class="w-100"></div>
+              <div class="font ms-3">
+                <h6>Weather</h6>
+                <span class="span">tagline goes here  </span>
+              </div>          
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-5 p-5 mb-lg-0">
+             
+              <li class="nav-item ">
+               <button class="px-4 py-0 btn rounded-pill border-color">
+                <a class="nav-link p-0 text-color " href="#">Home</a>
+               </button>
+              </li>
+              <li class="nav-item mx-2 ">
+                <button class="px-4 py-0 btn rounded-pill border-color1">
+                 <a class="nav-link p-0 text-color1 " href="#">News</a>
+                </button>
+               </li>
+               <li class="nav-item mx-2 ">
+                <button class="px-4 py-0 btn rounded-pill border-color1">
+                 <a class="nav-link p-0 text-color1 " href="#">Live cameras</a>
+                </button>
+               </li>
+               <li class="nav-item mx-2 ">
+                <button class="px-4 py-0 btn rounded-pill border-color1">
+                 <a class="nav-link p-0 text-color1 " href="#">Photos</a>
+                </button>
+               </li>
+               <li class="nav-item mx-2 ">
+                <button class="px-4 py-0 btn rounded-pill border-color1">
+                 <a class="nav-link p-0 text-color1 " href="#">Contact</a>
+                </button>
+               </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+  
+
+        <!-- header -->
+        <div class="header " >
+          <div class=" margin-t  ">
+            <input type="text" class="  text-put w-100  rounded-pill" id="serch"   placeholder="Find your location...">
+            <button class=" rrrr  rounded-pill px-4 py-2   " > Find</button>
+        </input>
+        </div>
+        
+        </div>
+      
+        <!-- weather -->
+        <div class="weather "></div>
+          <div class="container">
+   <div class="row no-height " >
+
+      <div class="col-md-4  col-1  border1">
+       <div class="p-text content">
+       <p class="color-text  " id="today">sunday </p>
+       <div class="d-flex "> 
+        <p class="color-text" id="today_date" > 12 </p> <span class="color-text" id="today_month"> November</span>
+            </div>       </div>
+       <p class="color-text my-3 " id="locationcity">cario</p>
+       <div class="img-deg ">
+              <div class="d-flex"> 
+         <p class="fontsizep" id="today_degree">29</p> <span class="fontsizep"><sup>o</sup>C</span>
+             </div>
+              <img src="image/113 (1).png" class="img3 ms-4"id="imgtody"> 
+       </div>
+       <p class="colorp mb-3 mt-5" id=decription>Sunny</p>
+       <div class="container">
+         <div class="row">
+           <div class="col-md-4">
+             <div class="d-flex ">
+              <div class="bb" > <img src="image/icon-umberella.png"></div>
+              <div class="d-flex">
+               <p class="sunny" id="wind1">20</p> <span class="sunny">%</span>
+              </div>
+             </div>
+           </div>
+           <div class="col-md-4">
+            <div class="d-flex">
+            <div class="bb"> <img src="image/icon-wind.png"></div>
+              <div class="d-flex">
+                <p class="sunny" id="wind2">18</p> <span class="sunny">km/h</span>
+               </div>
+            </div>
+          </div >
+          <div class="col-md-4 ">
+            <div class="d-flex ">
+            <div class="bb nextdayaicon" > <img src="image/icon-compass.png"></div>
+            <div class="d-flex">
+              <p class="sunny" id="wind3">East</p> 
+             </div>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div> 
+
+      <div class="col-md-4  col-2 text-center text-center ">
+       <p class=" NextDay ">Thursday</p>
+      <div class="mb-4 mt-5 "> <img src="image/113 (1).png " class=" img2 nextdayaicon"></div>
+      <div class="d-flex justify-content-center"> 
+          <h3 class="maxdegree ">44.1</h3>
+          <h3><sup>o</sup>C</h3>       
+            </div>  
+            <div class="d-flex justify-content-center"> 
+              <p class="mindegree color-text">17.2<sup>o</sup></p>
+                  </div>      
+       <p class="colorp nextcondition">Sunny</p>
+     </div>
+
+     <div class="col-md-4  col-1   text-center border2 ">
+       <p class=" NextDay">Friday</p>
+       <div class="mb-4 mt-5  "> <img src="image/113 (1).png" class="img2 nextdayaicon"></div>
+       <div class="d-flex justify-content-center"> 
+        <h3 class="maxdegree ">26.1</h3>
+        <h3><sup>o</sup>C</h3>
+            </div>  
+            <div class="d-flex justify-content-center"> 
+              <p class="mindegree color-text">14.2<sup>o</sup></p>
+                  </div>  
+       <p class="colorp nextcondition">Sunny</p>
+     </div>  
+
+   </div>
+ </div>
+
+       <!-- subscribe -->
+       
+       <div class="subscribe">
+         <div class="container ">
+           <div class="row ">
+             <div class="col-md-8">
+                <input type="text" class="  text-putt w-100  rounded-pill "   placeholder="Enter your email to Enter subscribe... ">
+                   <button class=" find  rounded-pill px-4 py-2  "> Find</button>
+               </input>
+               </div>
+             </div>
+             <div class="col-md-4">
+              <div class="d-flex icon-4  ">
+                <div class="">
+                  <i class=" icons fa-brands fa-facebook  p-2 rounded-circle me-2"></i>
+                </div>
+                <div class="  ">
+                  <i class="  icons fa-brands fa-twitter   p-2 rounded-circle me-2 "></i>
+                </div>
+               
+                <div class="  ">
+                  <i class="  icons  fa-brands fa-google-plus  p-2 rounded-circle me-2 "></i>
+                </div>
+                <div class=" ">
+                  <i class=" icons fa-brands fa-pinterest p-2 rounded-circle me-2"></i>
+                </div>
+               </div>
+               </div>        
+           </div>
+            <p class="textcolor">  Copyright 2014 Company name. Designed by Themezy. All rights reserved </p>
+         </div> 
+       
+
+<script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mainw.js"></script>
+</body>
+</html>
+
+ 
